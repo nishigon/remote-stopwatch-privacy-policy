@@ -52,3 +52,27 @@ GitHub Pages設定でユーザーが行う必要がある操作:
 - この作業では `nishigon.github.io` リポジトリは編集していない。
 - `speak-solve-alarm-privacy-policy` は編集していない。
 - 現在の作業はローカルファイル配置であり、GitHub への反映は別途必要。
+
+GitHub push 実行内容:
+- `git init`
+- `git branch -M main`
+- `git -c safe.directory=E:/work/RemoteStopwatch/remote-stopwatch-privacy-policy status --short --branch`
+- `git -c safe.directory=E:/work/RemoteStopwatch/remote-stopwatch-privacy-policy remote add origin https://github.com/nishigon/remote-stopwatch-privacy-policy.git`
+- `git -c safe.directory=E:/work/RemoteStopwatch/remote-stopwatch-privacy-policy add .`
+- `git -c safe.directory=E:/work/RemoteStopwatch/remote-stopwatch-privacy-policy commit -m "Add Remote Stopwatch privacy policy"`
+- `git -c safe.directory=E:/work/RemoteStopwatch/remote-stopwatch-privacy-policy push -u origin main`
+
+Push result:
+- `main` ブランチを `origin/main` に push 済み。
+- GitHub 上の `https://github.com/nishigon/remote-stopwatch-privacy-policy` に反映済み。
+- commit: `58afdc2 Add Remote Stopwatch privacy policy`
+
+次にユーザーがやる GitHub Pages 設定手順:
+1. GitHub で `nishigon/remote-stopwatch-privacy-policy` を開く。
+2. `Settings` を開く。
+3. `Pages` を開く。
+4. `Source` を `Deploy from a branch` にする。
+5. `Branch` を `main` にする。
+6. `Folder` を `/root` にする。
+7. `Save` を押す。
+8. 数分後に `https://nishigon.github.io/remote-stopwatch-privacy-policy/` を開いて確認する。
