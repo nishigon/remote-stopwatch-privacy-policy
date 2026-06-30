@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Page not found - Remote Stopwatch Privacy Policy</title>
+  <title>ページが見つかりません - Remote Stopwatch</title>
   <style>
     :root {
-      --bg: #f6f3ec;
-      --panel: #fffaf3;
-      --text: #1f2a33;
-      --muted: #5c6b74;
-      --accent: #2457d6;
-      --border: rgba(31, 42, 51, 0.12);
+      --bg: #f7f4ee;
+      --panel: #ffffff;
+      --text: #1c2430;
+      --muted: #5c6675;
+      --border: #d8dee8;
     }
     * { box-sizing: border-box; }
     body {
@@ -25,41 +24,40 @@
       padding: 24px;
     }
     .panel {
-      width: min(760px, 100%);
+      width: min(920px, 100%);
       background: var(--panel);
       border: 1px solid var(--border);
-      border-radius: 24px;
-      padding: 36px;
-      box-shadow: 0 18px 50px rgba(31, 42, 51, 0.10);
+      border-radius: 18px;
+      padding: 28px;
     }
-    h1 { margin: 0 0 12px; font-size: clamp(2rem, 4vw, 3rem); }
-    p { margin: 0 0 18px; color: var(--muted); line-height: 1.7; }
-    .links { display: flex; flex-wrap: wrap; gap: 12px; }
-    a {
+    h1 { margin: 0 0 14px; font-size: clamp(2rem, 4vw, 3rem); }
+    p { margin: 0 0 18px; color: var(--muted); line-height: 1.8; }
+    .links { display: flex; flex-wrap: wrap; gap: 10px; }
+    .links a {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      min-height: 44px;
+      min-height: 42px;
       padding: 0 16px;
+      border: 1px solid #bfc7d3;
       border-radius: 999px;
-      border: 1px solid var(--border);
-      text-decoration: none;
-      color: var(--accent);
       background: white;
-      font-weight: 700;
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 600;
     }
   </style>
 </head>
 <body>
   <main class="panel">
-    <h1>Page not found</h1>
-    <p>The requested page does not exist. Use the home page or one of the language pages below to continue.</p>
+    <h1>ページが見つかりません</h1>
+    <p>指定されたページは存在しません。日本語トップ、または各言語ページへ戻ってください。</p>
     <div class="links">
-      <a href="./">Home</a>
+      <a href="./">日本語トップ</a>
       <a href="./en/">English</a>
-      <a href="./ko/">한국어</a>
       <a href="./zh-cn/">简体中文</a>
       <a href="./zh-tw/">繁體中文</a>
+      <a href="./ko/">한국어</a>
     </div>
   </main>
 </body>

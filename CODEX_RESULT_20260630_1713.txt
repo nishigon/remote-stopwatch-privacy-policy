@@ -76,3 +76,9 @@ Push result:
 6. `Folder` を `/root` にする。
 7. `Save` を押す。
 8. 数分後に `https://nishigon.github.io/remote-stopwatch-privacy-policy/` を開いて確認する。
+
+2026-06-30 追加修正:
+- ルート `index.html` を言語メニューから日本語版本文へ変更した。
+- 日本語版を正本とし、`Speak Solve Alarm` と同様の構成で各言語ページに言語切替ボタンと正本案内を付けた。
+- `404.html` も日本語トップへ戻る構成に変更した。
+- `README.md` に `index.html` が日本語版正本であることを追記した。

@@ -1,6 +1,6 @@
 # remote-stopwatch-privacy-policy
 
-Remote Stopwatch 用 Privacy Policy ページのリポジトリです。
+Remote Stopwatch 用 Privacy Policy ページのリポジトリです。`index.html` は日本語版の正本です。
 
 ## Public URL
 
@@ -30,7 +30,7 @@ https://nishigon.github.io/remote-stopwatch-privacy-policy/
 
 ## Update Method
 
-`index.html` と各言語ページを編集し、`main` ブランチへ反映します。
+日本語版の正本は `index.html` です。各言語ページを更新する場合も、日本語版との意味の一致を保ったうえで `main` ブランチへ反映します。
 
 ## Notes
 

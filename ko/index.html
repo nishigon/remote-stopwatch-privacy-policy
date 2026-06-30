@@ -4,146 +4,167 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Remote Stopwatch 개인정보처리방침</title>
+  <meta name="description" content="Remote Stopwatch 개인정보처리방침">
   <style>
     :root {
-      --bg: #f6f3ec;
-      --panel: #fffaf3;
-      --text: #1f2a33;
-      --muted: #5c6b74;
-      --accent: #2457d6;
-      --border: rgba(31, 42, 51, 0.12);
+      --bg: #f7f4ee;
+      --panel: #ffffff;
+      --text: #1c2430;
+      --muted: #5c6675;
+      --border: #d8dee8;
+      --button-bg: #ffffff;
+      --button-active: #f1f1f1;
     }
     * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.75;
-    }
-    main {
-      width: min(860px, calc(100% - 32px));
-      margin: 0 auto;
-      padding: 40px 0 56px;
-    }
-    .panel {
-      background: var(--panel);
-      border: 1px solid var(--border);
-      border-radius: 24px;
-      padding: 32px;
-      box-shadow: 0 18px 50px rgba(31, 42, 51, 0.10);
-    }
-    h1, h2 { line-height: 1.2; }
-    h1 { margin: 0 0 10px; font-size: clamp(2rem, 4vw, 3rem); }
-    h2 { margin: 28px 0 10px; font-size: 1.15rem; }
-    p, li { color: var(--text); }
+    body { margin: 0; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: var(--bg); color: var(--text); line-height: 1.85; }
+    main { width: min(1120px, calc(100% - 32px)); margin: 0 auto; padding: 28px 0 56px; }
+    .app-name { margin: 0 0 18px; color: var(--muted); font-size: 1.05rem; }
+    h1 { margin: 0 0 20px; font-size: clamp(2.2rem, 5vw, 3.6rem); line-height: 1.15; }
+    .lang-links { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; }
+    .lang-links a, .lang-links span { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 18px; border: 1px solid #bfc7d3; border-radius: 999px; background: var(--button-bg); color: var(--text); text-decoration: none; font-weight: 600; }
+    .lang-links span { background: var(--button-active); }
+    .notice { margin: 0 0 28px; padding: 18px 20px; border: 1px solid var(--border); border-radius: 14px; background: var(--panel); }
+    section { margin-top: 34px; }
+    h2 { margin: 0 0 14px; padding-bottom: 8px; border-bottom: 1px solid var(--border); font-size: clamp(1.4rem, 3vw, 2rem); line-height: 1.3; }
     p { margin: 0 0 14px; }
-    ul { margin: 0 0 14px 22px; padding: 0; }
-    a { color: var(--accent); }
-    .meta { color: var(--muted); margin-bottom: 24px; }
-    .lang { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
-    .lang a {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 40px;
-      padding: 0 14px;
-      border: 1px solid var(--border);
-      border-radius: 999px;
-      text-decoration: none;
-      background: white;
-    }
+    ul { margin: 0 0 14px 24px; padding: 0; }
+    li { margin-bottom: 6px; }
+    a { color: #2457d6; }
+    .meta { margin-top: 36px; color: var(--muted); font-size: 0.95rem; }
   </style>
 </head>
 <body>
   <main>
-    <section class="panel">
-      <h1>Remote Stopwatch 개인정보처리방침</h1>
-      <p class="meta">시행일: 2026년 6월 30일</p>
+    <p class="app-name">Remote Stopwatch</p>
+    <h1>개인정보처리방침</h1>
 
+    <div class="lang-links" aria-label="language links">
+      <a href="../">日本語</a>
+      <a href="../en/">English</a>
+      <a href="../zh-cn/">简体中文</a>
+      <a href="../zh-tw/">繁體中文</a>
+      <span>한국어</span>
+    </div>
+
+    <p class="notice">
+      이 페이지는 Remote Stopwatch에서 이용자 정보가 어떻게 처리되는지 설명합니다. 일본어판을 정본으로 합니다.
+    </p>
+
+    <section>
+      <h2>1. 적용 범위</h2>
       <p>
-        Remote Stopwatch는 훈련, 연습, 이벤트, 놀이용의 비공식 스톱워치 앱입니다. 계정 생성 없이 사용할 수
-        있도록 설계되었으며, 이름, 이메일 주소, 위치 정보, 연락처, 사진, 음성, 기기 내 파일, 카메라 영상 또는
-        동영상을 의도적으로 수집하지 않습니다.
+        본 방침은 Remote Stopwatch와 관련하여 처리되는 정보에 적용됩니다. Remote Stopwatch는 2대 이상의 스마트폰을 사용하여
+        출발 지점과 골 지점 등 떨어진 지점 사이의 시간을 측정하는 비공식 측정 앱입니다. START 담당 기기와 STOP 담당 기기가 같은 측정 룸에 참여하고,
+        각 기기의 버튼 입력 시각을 보정하여 결과를 표시합니다. 공식 경기 계측용이 아니라 훈련, 연습, 이벤트, 놀이용 사용을 상정합니다.
       </p>
+    </section>
 
-      <p>
-        향후 종료 지점 확인용 영상 보정 등 새로운 기능이 추가되는 경우, 해당 기능 공개 전에 이 정책을 업데이트합니다.
-      </p>
-
-      <h2>앱이 사용하는 정보</h2>
-      <p>룸 기반 스톱워치 기능을 제공하기 위해 다음과 같은 운영 정보가 전송될 수 있습니다.</p>
+    <section>
+      <h2>2. 수집하지 않을 방침의 정보</h2>
+      <p>초기 버전에서는 다음 정보를 의도적으로 수집하지 않을 방침입니다.</p>
       <ul>
-        <li>Room ID 및 참가 정보</li>
-        <li>기기에서 생성된 식별자</li>
-        <li>joinSecret 및 임시 세션 토큰과 유사한 연결 정보</li>
-        <li>host, starter, stopper, viewer와 같은 역할 정보</li>
-        <li>선택 입력인 기기 이름/레인 이름 및 주자 이름</li>
-        <li>START 및 STOP 이벤트</li>
-        <li>START/STOP 버튼 누른 시각</li>
-        <li>elapsedMillis 등의 측정 결과</li>
-        <li>순위, 이력, RTT, offset, 추정 오차, WebSocket 연결 상태</li>
-        <li>통신 상태, 진단 로그, appPhase 같은 테스트 로그 정보</li>
-        <li>AdMob 사용 시 광고 관련 식별자</li>
-        <li>Google Play Billing 사용 시 구매 상태</li>
+        <li>이름</li>
+        <li>이메일 주소</li>
+        <li>위치 정보</li>
+        <li>연락처</li>
+        <li>사진</li>
+        <li>음성</li>
+        <li>기기 내 파일</li>
+        <li>카메라 영상 또는 동영상</li>
       </ul>
       <p>
-        기기 이름/레인 이름/주자 이름은 "1레인", "A기기", "골인 담당"처럼 일반적인 표현으로 입력할 수 있습니다.
-        개인 이름을 입력한 경우, 그 내용이 같은 룸의 다른 기기나 결과 공유 문구에 표시될 수 있습니다.
+        향후 골 확인 영상 보정 등 새로운 기능이 추가되는 경우, 해당 기능 공개 전에 본 방침을 업데이트합니다.
       </p>
+    </section>
 
-      <h2>이용 목적</h2>
+    <section>
+      <h2>3. 취득하거나 처리할 수 있는 정보</h2>
       <ul>
-        <li>측정 룸 생성 및 참여</li>
+        <li>Room ID, Client ID, joinSecret, sessionToken에 준하는 임시 연결 정보</li>
+        <li>기기 역할 정보(host, starter, stopper, viewer 등)</li>
+        <li>기기 이름/레인 이름, 주자 이름 등의 선택 입력 라벨</li>
+        <li>START 이벤트, STOP 이벤트, START/STOP 버튼 입력 시각</li>
+        <li>elapsedMillis 등의 측정 결과, 순위, 이력</li>
+        <li>RTT, offset, 추정 오차, WebSocket 연결 상태</li>
+        <li>통신 상태, 진단 로그, appPhase 등의 테스트 로그 정보</li>
+        <li>AdMob 활성화 시 광고 SDK가 다룰 수 있는 광고 ID 등</li>
+        <li>Google Play Billing 활성화 시 처리되는 구매 상태</li>
+      </ul>
+      <p>
+        기기 이름/레인 이름, 주자 이름은 사용자가 임의로 입력하는 라벨입니다. "1레인", "A기기", "골인 담당"과 같은 일반적인 라벨로 사용할 수 있습니다.
+        사용자가 개인 이름을 입력한 경우, 그 내용이 같은 룸의 다른 기기나 결과 공유 문구에 표시될 수 있습니다.
+      </p>
+    </section>
+
+    <section>
+      <h2>4. 이용 목적</h2>
+      <ul>
+        <li>측정 룸의 생성, 참여, 유지</li>
         <li>START/STOP 이벤트 동기화</li>
         <li>보정된 기록 계산</li>
-        <li>결과 및 이력 표시</li>
-        <li>결과 복사/공유 문구 작성</li>
+        <li>결과 및 이력 표시, 복사/공유 문구 생성</li>
         <li>통신 상태와 추정 오차 표시</li>
-        <li>향후 Free/Pro 제한이나 광고 재고 관리가 도입될 경우의 판정</li>
+        <li>문의 대응 및 문제 조사</li>
+        <li>향후 Free/Pro 또는 광고 재고 관리가 도입될 경우 기능 제한 판정</li>
       </ul>
-
-      <h2>저장 및 보관</h2>
-      <p>
-        룸 정보와 연결 정보는 원칙적으로 현재 룸 유지와 결과 표시에 필요한 범위에서만 임시로 처리합니다.
-        앱 내 이력은 기기 내에 저장될 수 있습니다. Copy test log 같은 로그를 전송한 경우 지원 또는 문제 조사에 활용할 수 있습니다.
-      </p>
-
-      <h2>제3자 서비스, 광고 및 결제</h2>
-      <p>
-        일부 빌드에서는 서버 통신을 위해 Cloudflare 등 인프라 서비스를 사용할 수 있습니다. 광고가 활성화되면
-        Google AdMob을 사용할 수 있으며, 이 경우 Google이 광고 식별자나 관련 신호를 처리할 수 있습니다. 결제가
-        활성화되면 Google Play Billing을 사용할 수 있으며, Google이 구매 상태를 처리할 수 있습니다. 결제 카드 정보는 앱 개발자가 직접 받지 않습니다.
-      </p>
-
-      <h2>아동의 개인정보</h2>
-      <p>
-        본 앱은 주로 만 13세 미만 아동을 대상으로 하지 않습니다. 미성년자가 사용하는 경우에는 보호자 또는 관리자가 그 사용이 적절한지 판단하는 것을 전제로 합니다.
-      </p>
-
-      <h2>보안</h2>
-      <p>
-        운영 서비스에서는 HTTPS 및 WSS 같은 안전한 통신 방식을 사용할 예정입니다. 개발용 로컬 연결은 공개 배포용이 아닙니다.
-        비밀 키, 토큰, 서명 자료는 이 저장소에 포함하지 않습니다.
-      </p>
-
-      <h2>정책 변경</h2>
-      <p>
-        본 방침은 필요에 따라 변경될 수 있으며, 최신 버전은 이 페이지에 게시됩니다.
-      </p>
-
-      <h2>문의</h2>
-      <p>
-        이 방침에 대한 문의는 <strong>nishigon.app.support@gmail.com</strong>로 보내 주세요.
-      </p>
-
-      <div class="lang">
-        <a href="../">언어 메뉴</a>
-        <a href="../en/">English</a>
-        <a href="../zh-cn/">简体中文</a>
-        <a href="../zh-tw/">繁體中文</a>
-      </div>
     </section>
+
+    <section>
+      <h2>5. 보관 기간</h2>
+      <p>
+        룸 정보와 연결 정보는 원칙적으로 측정 룸 유지와 결과 표시에 필요한 범위에서만 일시적으로 처리합니다.
+        앱 내 이력은 기기 내에 저장될 수 있습니다. 사용자가 Copy test log 등으로 로그를 보낸 경우, 문의 대응이나 문제 조사에 사용할 수 있습니다.
+      </p>
+      <p>
+        향후 장기적인 클라우드 이력 저장을 도입하는 경우 본 방침을 업데이트합니다.
+      </p>
+    </section>
+
+    <section>
+      <h2>6. 제3자 제공, 광고 및 결제</h2>
+      <p>
+        개인정보를 판매하지 않습니다. 서버 통신에는 Cloudflare 등의 인프라 서비스를 사용할 수 있습니다.
+      </p>
+      <p>
+        광고를 활성화하는 경우 Google AdMob을 사용할 수 있으며, Google이 광고 ID 등의 정보를 처리할 수 있습니다. 초기 테스트에서는 광고를 Mock 처리하거나 비활성화할 수 있습니다.
+        Free 버전에서는 배너 광고나 리워드 광고를 표시할 수 있으며, Pro 버전은 광고를 표시하지 않는 방침입니다.
+      </p>
+      <p>
+        결제를 활성화하는 경우 Google Play Billing을 사용할 수 있으며, Google이 구매 상태를 처리할 수 있습니다. 향후 Pro 기능으로 광고 제거, 무제한 측정,
+        복수 STOP 지원, 강화된 이력 저장 등을 제공할 수 있습니다. 결제 카드 정보는 개발자가 직접 취득하지 않습니다.
+      </p>
+    </section>
+
+    <section>
+      <h2>7. 아동의 이용</h2>
+      <p>
+        본 앱은 13세 미만 아동을 주된 대상으로 하지 않습니다. 미성년자가 이용하는 경우 보호자 또는 관리자의 판단에 따라 이용해 주십시오.
+      </p>
+    </section>
+
+    <section>
+      <h2>8. 안전 관리</h2>
+      <p>
+        공개 버전에서는 HTTPS/WSS 등의 안전한 통신 방식을 사용할 방침입니다. debugLocal과 같은 개발용 로컬 연결은 일반 공개 버전에서 사용하지 않을 방침입니다.
+        서명 키, 비밀 정보, 토큰은 공개 저장소에 포함하지 않습니다.
+      </p>
+    </section>
+
+    <section>
+      <h2>9. 개정</h2>
+      <p>
+        본 방침은 필요에 따라 개정될 수 있습니다. 최신 내용은 본 페이지에 게시합니다.
+      </p>
+    </section>
+
+    <section>
+      <h2>10. 문의처</h2>
+      <p>
+        본 방침에 관한 문의처: <a href="mailto:nishigon.app.support@gmail.com">nishigon.app.support@gmail.com</a>
+      </p>
+    </section>
+
+    <p class="meta">최종 업데이트: 2026-06-30</p>
   </main>
 </body>
 </html>

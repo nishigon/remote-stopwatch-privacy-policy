@@ -1,177 +1,227 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Remote Stopwatch Privacy Policy</title>
-  <meta name="description" content="Privacy policy for Remote Stopwatch.">
+  <title>Remote Stopwatch プライバシーポリシー</title>
+  <meta name="description" content="Remote Stopwatch のプライバシーポリシー">
   <style>
     :root {
-      color-scheme: light;
-      --bg: #f6f3ec;
-      --panel: #fffaf3;
-      --text: #1f2a33;
-      --muted: #5c6b74;
-      --accent: #2457d6;
-      --accent-2: #0f8b8d;
-      --border: rgba(31, 42, 51, 0.12);
-      --shadow: 0 18px 50px rgba(31, 42, 51, 0.10);
+      --bg: #f7f4ee;
+      --panel: #ffffff;
+      --text: #1c2430;
+      --muted: #5c6675;
+      --border: #d8dee8;
+      --button-bg: #ffffff;
+      --button-active: #f1f1f1;
     }
-
     * { box-sizing: border-box; }
-
     body {
       margin: 0;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
       color: var(--text);
-      background:
-        radial-gradient(circle at top left, rgba(36, 87, 214, 0.15), transparent 36%),
-        radial-gradient(circle at bottom right, rgba(15, 139, 141, 0.14), transparent 30%),
-        var(--bg);
-      min-height: 100vh;
+      line-height: 1.85;
     }
-
     main {
-      width: min(980px, calc(100% - 32px));
+      width: min(1120px, calc(100% - 32px));
       margin: 0 auto;
-      padding: 64px 0 48px;
+      padding: 28px 0 56px;
     }
-
-    .hero, .card, .footer {
-      background: var(--panel);
-      border: 1px solid var(--border);
-      border-radius: 24px;
-      box-shadow: var(--shadow);
+    .app-name {
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size: 1.05rem;
     }
-
-    .hero { padding: 36px; }
-
-    .eyebrow {
-      margin: 0 0 14px;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--accent-2);
-      font-size: 0.78rem;
-      font-weight: 700;
-    }
-
     h1 {
-      margin: 0;
-      font-size: clamp(2rem, 4vw, 3.4rem);
-      line-height: 1.05;
+      margin: 0 0 20px;
+      font-size: clamp(2.2rem, 5vw, 3.6rem);
+      line-height: 1.15;
     }
-
-    .lede {
-      margin: 18px 0 0;
-      max-width: 65ch;
-      color: var(--muted);
-      font-size: 1.02rem;
-      line-height: 1.7;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 18px;
-      margin-top: 22px;
-    }
-
-    .card { padding: 22px; }
-
-    .card h2 {
-      margin: 0 0 10px;
-      font-size: 1.04rem;
-    }
-
-    .card p {
-      margin: 0;
-      color: var(--muted);
-      line-height: 1.65;
-    }
-
-    .links {
+    .lang-links {
       display: flex;
       flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 20px;
+      gap: 10px;
+      margin-bottom: 20px;
     }
-
-    .links a {
+    .lang-links a,
+    .lang-links span {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      min-height: 46px;
+      min-height: 44px;
       padding: 0 18px;
+      border: 1px solid #bfc7d3;
       border-radius: 999px;
-      border: 1px solid var(--border);
-      background: white;
-      color: var(--accent);
-      font-weight: 700;
+      background: var(--button-bg);
+      color: var(--text);
       text-decoration: none;
+      font-weight: 600;
     }
-
-    .links a.primary {
-      background: linear-gradient(135deg, var(--accent), #5a7cf0);
-      color: white;
-      border-color: transparent;
+    .lang-links span {
+      background: var(--button-active);
     }
-
-    .footer {
-      margin-top: 18px;
-      padding: 18px 22px;
+    .notice {
+      margin: 0 0 28px;
+      padding: 18px 20px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--panel);
+    }
+    section { margin-top: 34px; }
+    h2 {
+      margin: 0 0 14px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      line-height: 1.3;
+    }
+    p { margin: 0 0 14px; }
+    ul {
+      margin: 0 0 14px 24px;
+      padding: 0;
+    }
+    li { margin-bottom: 6px; }
+    a { color: #2457d6; }
+    .meta {
+      margin-top: 36px;
       color: var(--muted);
-      font-size: 0.92rem;
-    }
-
-    .footer a { color: var(--accent); }
-
-    @media (max-width: 720px) {
-      main { padding-top: 24px; }
-      .hero { padding: 24px; }
-      .grid { grid-template-columns: 1fr; }
+      font-size: 0.95rem;
     }
   </style>
 </head>
 <body>
   <main>
-    <section class="hero">
-      <p class="eyebrow">Remote Stopwatch / リモートストップウォッチ</p>
-      <h1>Privacy Policy</h1>
-      <p class="lede">
-        Choose your preferred language below. The same policy intent is published in English, Korean,
-        Simplified Chinese, and Traditional Chinese.
-      </p>
-      <div class="links" aria-label="Language links">
-        <a class="primary" href="./en/">English</a>
-        <a href="./ko/">한국어</a>
-        <a href="./zh-cn/">简体中文</a>
-        <a href="./zh-tw/">繁體中文</a>
-      </div>
-    </section>
+    <p class="app-name">Remote Stopwatch</p>
+    <h1>プライバシーポリシー</h1>
 
-    <section class="grid" aria-label="Policy highlights">
-      <article class="card">
-        <h2>No account required</h2>
-        <p>Remote Stopwatch is designed to work without creating a user account.</p>
-      </article>
-      <article class="card">
-        <h2>Operational data only</h2>
-        <p>Room coordination, timing, diagnostics, and optional labels are used only to provide the app's features.</p>
-      </article>
-      <article class="card">
-        <h2>Third-party services</h2>
-        <p>Some builds may use Cloudflare, Google AdMob, or Google Play Billing, each governed by its own policy.</p>
-      </article>
-      <article class="card">
-        <h2>Effective date</h2>
-        <p>June 30, 2026</p>
-      </article>
-    </section>
-
-    <div class="footer">
-      Public URL:
-      <a href="https://nishigon.github.io/remote-stopwatch-privacy-policy/">https://nishigon.github.io/remote-stopwatch-privacy-policy/</a>
+    <div class="lang-links" aria-label="language links">
+      <span>日本語</span>
+      <a href="./en/">English</a>
+      <a href="./zh-cn/">简体中文</a>
+      <a href="./zh-tw/">繁體中文</a>
+      <a href="./ko/">한국어</a>
     </div>
+
+    <p class="notice">
+      このページは、Remote Stopwatch（リモートストップウォッチ）における利用者情報の取扱いを説明するものです。日本語版を正本とします。
+    </p>
+
+    <section>
+      <h2>1. 対象範囲</h2>
+      <p>
+        本ポリシーは、Remote Stopwatch に関連して取り扱う情報に適用されます。Remote Stopwatch は、2台以上のスマートフォンを使い、
+        スタート地点とゴール地点など離れた地点間のタイムを計測するための非公式計測アプリです。START担当端末とSTOP担当端末が同じ計測ルームに参加し、
+        各端末の押下時刻を補正して結果を表示します。公式競技計測用ではなく、トレーニング、練習、イベント、遊び向けの利用を想定しています。
+      </p>
+    </section>
+
+    <section>
+      <h2>2. 取得しない情報</h2>
+      <p>初期版では、次の情報を意図して収集しない方針です。</p>
+      <ul>
+        <li>氏名</li>
+        <li>メールアドレス</li>
+        <li>位置情報</li>
+        <li>連絡先</li>
+        <li>写真</li>
+        <li>音声</li>
+        <li>端末内ファイル</li>
+        <li>カメラ映像や動画</li>
+      </ul>
+      <p>
+        将来、ゴール確認動画補正など新しい機能を追加する場合は、その公開前に本ポリシーを更新します。
+      </p>
+    </section>
+
+    <section>
+      <h2>3. 取得または取り扱う可能性がある情報</h2>
+      <ul>
+        <li>Room ID、Client ID、joinSecret、sessionToken 相当の一時的な接続情報</li>
+        <li>端末の役割情報（host、starter、stopper、viewer など）</li>
+        <li>端末名／レーン、走者名などの任意入力ラベル</li>
+        <li>STARTイベント、STOPイベント、START／STOP の押下時刻</li>
+        <li>elapsedMillis などの計測結果、順位、履歴</li>
+        <li>RTT、offset、推定誤差、WebSocket 接続状態</li>
+        <li>通信状態、診断ログ、appPhase などのテストログ情報</li>
+        <li>AdMob 有効化時に広告 SDK が扱う広告 ID 等</li>
+        <li>Google Play Billing 有効化時に扱う購入状態</li>
+      </ul>
+      <p>
+        端末名／レーン、走者名はユーザーが任意で入力するラベルです。「1レーン」「A端末」「ゴール係」などの一般的なラベルで利用できます。
+        ユーザーが個人名を入力した場合、その入力内容が同じルーム内の他端末や結果共有文面に表示される可能性があります。
+      </p>
+    </section>
+
+    <section>
+      <h2>4. 利用目的</h2>
+      <ul>
+        <li>計測ルームの作成、参加、維持</li>
+        <li>START／STOP イベントの同期</li>
+        <li>補正済みタイムの算出</li>
+        <li>結果表示、履歴表示、結果コピー／共有文面の作成</li>
+        <li>通信状態、推定誤差、接続状況の表示</li>
+        <li>不具合調査、問い合わせ対応</li>
+        <li>将来的に Free／Pro や広告ストックなどの利用制限管理を導入した場合の判定</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>5. 保存期間</h2>
+      <p>
+        ルーム情報や接続情報は、原則として計測ルームの維持と結果表示に必要な範囲で一時的に取り扱います。アプリ内履歴は端末内に保存される場合があります。
+        ユーザーが Copy test log などでログを送付した場合、問い合わせ対応や不具合調査のために利用する場合があります。
+      </p>
+      <p>
+        将来的に長期のクラウド履歴保存を導入する場合は、本ポリシーを更新します。
+      </p>
+    </section>
+
+    <section>
+      <h2>6. 第三者提供、広告、課金</h2>
+      <p>
+        個人情報の販売は行いません。サーバー通信には Cloudflare 等のインフラサービスを利用する可能性があります。
+      </p>
+      <p>
+        広告を有効化する場合は Google AdMob を利用する可能性があり、広告 ID 等が Google により扱われる場合があります。初回テストでは広告を Mock または無効化する可能性があります。
+        Free 版ではバナー広告やリワード広告を表示する可能性があり、Pro 版では広告を表示しない方針です。
+      </p>
+      <p>
+        課金を有効化する場合は Google Play Billing を利用し、購入状態等が Google により扱われる場合があります。将来的に Pro 機能として広告なし、計測無制限、複数 STOP、
+        履歴保存強化などを提供する可能性があります。決済カード情報を開発者が直接取得することはありません。
+      </p>
+    </section>
+
+    <section>
+      <h2>7. 子どもの利用</h2>
+      <p>
+        本アプリは、13歳未満の子どもを主な対象とするアプリではありません。未成年者が利用する場合は、保護者または管理者の判断で利用してください。
+      </p>
+    </section>
+
+    <section>
+      <h2>8. 安全管理</h2>
+      <p>
+        公開版では HTTPS／WSS 等の安全な通信方式を利用する方針です。debugLocal などの開発用ローカル接続は一般公開版で使用しない方針です。
+        署名キー、秘密情報、トークンは公開リポジトリに含めません。
+      </p>
+    </section>
+
+    <section>
+      <h2>9. 改定</h2>
+      <p>
+        本ポリシーは必要に応じて改定されることがあります。最新の内容は本ページに掲載します。
+      </p>
+    </section>
+
+    <section>
+      <h2>10. お問い合わせ先</h2>
+      <p>
+        本ポリシーに関するお問い合わせ先: <a href="mailto:nishigon.app.support@gmail.com">nishigon.app.support@gmail.com</a>
+      </p>
+    </section>
+
+    <p class="meta">最終更新日: 2026-06-30</p>
   </main>
 </body>
 </html>
