@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Remote Stopwatch 隱私權政策</title>
+  <style>
+    :root {
+      --bg: #f6f3ec;
+      --panel: #fffaf3;
+      --text: #1f2a33;
+      --muted: #5c6b74;
+      --accent: #2457d6;
+      --border: rgba(31, 42, 51, 0.12);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.75;
+    }
+    main {
+      width: min(860px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 40px 0 56px;
+    }
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 32px;
+      box-shadow: 0 18px 50px rgba(31, 42, 51, 0.10);
+    }
+    h1, h2 { line-height: 1.2; }
+    h1 { margin: 0 0 10px; font-size: clamp(2rem, 4vw, 3rem); }
+    h2 { margin: 28px 0 10px; font-size: 1.15rem; }
+    p, li { color: var(--text); }
+    p { margin: 0 0 14px; }
+    ul { margin: 0 0 14px 22px; padding: 0; }
+    a { color: var(--accent); }
+    .meta { color: var(--muted); margin-bottom: 24px; }
+    .lang { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+    .lang a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 40px;
+      padding: 0 14px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      text-decoration: none;
+      background: white;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="panel">
+      <h1>Remote Stopwatch 隱私權政策</h1>
+      <p class="meta">生效日期：2026年6月30日</p>
+
+      <p>
+        Remote Stopwatch 是一款用於訓練、練習、活動和娛樂的非官方碼表應用程式。它的設計目標是無需建立帳戶即可使用。
+        我們不會刻意收集您的姓名、電子郵件地址、位置資訊、聯絡人、照片、音訊、裝置內檔案或相機影片。
+      </p>
+
+      <p>
+        如果未來新增終點確認影片補正等新功能，我們會在功能發布前更新本政策。
+      </p>
+
+      <h2>應用程式使用的資訊</h2>
+      <p>為了提供以房間為基礎的碼表功能，應用程式可能會傳輸下列運作所需資料：</p>
+      <ul>
+        <li>房間 ID 與加入資訊</li>
+        <li>應用程式產生的用戶端識別碼</li>
+        <li>joinSecret 與暫時性 session token 類連線資訊</li>
+        <li>host、starter、stopper、viewer 等角色資訊</li>
+        <li>可選輸入的裝置名稱/分道名稱與跑者名稱</li>
+        <li>START 與 STOP 事件</li>
+        <li>START/STOP 按下時間</li>
+        <li>elapsedMillis 等計時結果</li>
+        <li>名次、歷史、RTT、offset、推定誤差與 WebSocket 連線狀態</li>
+        <li>通訊狀態、診斷日誌，以及 appPhase 等測試日誌資訊</li>
+        <li>啟用 AdMob 時的廣告相關識別碼</li>
+        <li>啟用 Google Play Billing 時的購買狀態</li>
+      </ul>
+      <p>
+        裝置名稱/分道名稱/跑者名稱可以用一般標籤輸入，例如「1道」「A裝置」「終點負責」。如果您輸入個人姓名，
+        該內容可能會顯示給同一房間內的其他裝置，或出現在結果分享文字中。
+      </p>
+
+      <h2>使用目的</h2>
+      <ul>
+        <li>建立與加入計時房間</li>
+        <li>同步 START/STOP 事件</li>
+        <li>計算修正後的成績</li>
+        <li>顯示結果與歷史</li>
+        <li>建立結果複製/分享文字</li>
+        <li>顯示通訊狀態與推定誤差</li>
+        <li>若日後導入 Free/Pro 限制或廣告庫存管理，用於判定功能可用性</li>
+      </ul>
+
+      <h2>儲存與保留</h2>
+      <p>
+        房間資訊與連線資訊原則上僅會在維持目前房間及顯示結果所需的範圍內暫時處理。應用程式內的歷史記錄可能會
+        儲存在裝置上。如果您傳送 Copy test log 之類的日誌，我們可能會用於支援或問題排查。
+      </p>
+
+      <h2>第三方服務、廣告與付款</h2>
+      <p>
+        某些版本可能會使用 Cloudflare 等基礎設施服務進行伺服器通訊。如果啟用廣告，可能會使用 Google AdMob，
+        屆時 Google 可能會處理廣告識別碼或相關訊號。如果啟用付款，可能會使用 Google Play Billing，
+        屆時 Google 可能會處理購買狀態。我們不會直接取得付款卡資訊。
+      </p>
+
+      <h2>兒童隱私</h2>
+      <p>
+        本應用程式並非主要以 13 歲以下兒童為對象。若未成年人使用本應用程式，我們期望由家長或監護人判斷是否適合使用。
+      </p>
+
+      <h2>安全性</h2>
+      <p>
+        我們計畫在正式服務中使用 HTTPS 與 WSS 等安全通訊方式。開發用的本地連線不作為公開發布用途。密鑰、
+        代碼、權杖與簽章材料不會包含在本倉庫中。
+      </p>
+
+      <h2>政策變更</h2>
+      <p>
+        我們可能會不定期更新本政策。最新版本將會發佈在此頁面。
+      </p>
+
+      <h2>聯絡方式</h2>
+      <p>
+        若您對本政策有任何疑問，請聯絡 <strong>nishigon.app.support@gmail.com</strong>。
+      </p>
+
+      <div class="lang">
+        <a href="../">語言選單</a>
+        <a href="../en/">English</a>
+        <a href="../ko/">한국어</a>
+        <a href="../zh-cn/">简体中文</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

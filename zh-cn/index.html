@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Remote Stopwatch 隐私政策</title>
+  <style>
+    :root {
+      --bg: #f6f3ec;
+      --panel: #fffaf3;
+      --text: #1f2a33;
+      --muted: #5c6b74;
+      --accent: #2457d6;
+      --border: rgba(31, 42, 51, 0.12);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.75;
+    }
+    main {
+      width: min(860px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 40px 0 56px;
+    }
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 32px;
+      box-shadow: 0 18px 50px rgba(31, 42, 51, 0.10);
+    }
+    h1, h2 { line-height: 1.2; }
+    h1 { margin: 0 0 10px; font-size: clamp(2rem, 4vw, 3rem); }
+    h2 { margin: 28px 0 10px; font-size: 1.15rem; }
+    p, li { color: var(--text); }
+    p { margin: 0 0 14px; }
+    ul { margin: 0 0 14px 22px; padding: 0; }
+    a { color: var(--accent); }
+    .meta { color: var(--muted); margin-bottom: 24px; }
+    .lang { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+    .lang a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 40px;
+      padding: 0 14px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      text-decoration: none;
+      background: white;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="panel">
+      <h1>Remote Stopwatch 隐私政策</h1>
+      <p class="meta">生效日期：2026年6月30日</p>
+
+      <p>
+        Remote Stopwatch 是一款用于训练、练习、活动和娱乐的非官方秒表应用。它设计为无需创建账户即可使用。
+        我们不会有意收集您的姓名、电子邮箱、位置信息、联系人、照片、音频、设备中的文件或摄像头视频。
+      </p>
+
+      <p>
+        如果将来加入终点确认视频补正等新功能，我们会在功能发布前更新本政策。
+      </p>
+
+      <h2>应用使用的信息</h2>
+      <p>为了提供基于房间的秒表功能，应用可能会传输以下运行所需数据：</p>
+      <ul>
+        <li>房间 ID 和加入信息</li>
+        <li>应用生成的客户端标识符</li>
+        <li>joinSecret 和临时会话令牌类连接信息</li>
+        <li>host、starter、stopper、viewer 等角色信息</li>
+        <li>可选输入的设备名/赛道名和跑者名</li>
+        <li>START 和 STOP 事件</li>
+        <li>START/STOP 按下时间</li>
+        <li>elapsedMillis 等计时结果</li>
+        <li>排名、历史、RTT、offset、估计误差和 WebSocket 连接状态</li>
+        <li>通信状态、诊断日志以及 appPhase 等测试日志信息</li>
+        <li>启用 AdMob 时的广告相关标识符</li>
+        <li>启用 Google Play Billing 时的购买状态</li>
+      </ul>
+      <p>
+        设备名/赛道名/跑者名可以使用通用标签，例如“1号赛道”“A设备”“终点负责人”。如果您输入个人姓名，
+        该内容可能会显示给同一房间内的其他设备，或出现在结果分享文本中。
+      </p>
+
+      <h2>使用目的</h2>
+      <ul>
+        <li>创建和加入计时房间</li>
+        <li>同步 START/STOP 事件</li>
+        <li>计算修正后的成绩</li>
+        <li>显示结果和历史</li>
+        <li>生成结果复制/分享文本</li>
+        <li>显示通信状态和估计误差</li>
+        <li>如果将来加入 Free/Pro 限制或广告库存管理，用于判定功能可用性</li>
+      </ul>
+
+      <h2>存储与保留</h2>
+      <p>
+        房间信息和连接信息原则上仅会在维护当前房间和显示结果所需的范围内临时处理。应用内历史可能会
+        存储在设备上。如果您发送 Copy test log 之类的日志，我们可能会将其用于支持或故障排查。
+      </p>
+
+      <h2>第三方服务、广告和支付</h2>
+      <p>
+        某些版本可能会使用 Cloudflare 等基础设施服务进行服务器通信。如果启用广告，可能会使用 Google AdMob，
+        届时 Google 可能会处理广告标识符或相关信号。如果启用支付，可能会使用 Google Play Billing，
+        届时 Google 可能会处理购买状态。我们不会直接获取支付卡信息。
+      </p>
+
+      <h2>儿童隐私</h2>
+      <p>
+        本应用并非主要面向 13 岁以下儿童。如果未成年人使用本应用，我们期望由家长或监护人判断是否适合使用。
+      </p>
+
+      <h2>安全</h2>
+      <p>
+        我们计划在正式服务中使用 HTTPS 和 WSS 等安全通信方式。开发用的本地连接不面向公开发布。密钥、
+        令牌和签名材料不会包含在本仓库中。
+      </p>
+
+      <h2>政策变更</h2>
+      <p>
+        我们可能会不时更新本政策。最新版本会发布在此页面。
+      </p>
+
+      <h2>联系</h2>
+      <p>
+        如对本政策有任何疑问，请联系 <strong>nishigon.app.support@gmail.com</strong>。
+      </p>
+
+      <div class="lang">
+        <a href="../">语言菜单</a>
+        <a href="../en/">English</a>
+        <a href="../ko/">한국어</a>
+        <a href="../zh-tw/">繁體中文</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

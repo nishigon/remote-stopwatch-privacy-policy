@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Remote Stopwatch Privacy Policy</title>
+  <style>
+    :root {
+      --bg: #f6f3ec;
+      --panel: #fffaf3;
+      --text: #1f2a33;
+      --muted: #5c6b74;
+      --accent: #2457d6;
+      --border: rgba(31, 42, 51, 0.12);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.75;
+    }
+    main {
+      width: min(860px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 40px 0 56px;
+    }
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 32px;
+      box-shadow: 0 18px 50px rgba(31, 42, 51, 0.10);
+    }
+    h1, h2 { line-height: 1.2; }
+    h1 { margin: 0 0 10px; font-size: clamp(2rem, 4vw, 3rem); }
+    h2 { margin: 28px 0 10px; font-size: 1.15rem; }
+    p, li { color: var(--text); }
+    p { margin: 0 0 14px; }
+    ul { margin: 0 0 14px 22px; padding: 0; }
+    a { color: var(--accent); }
+    .meta { color: var(--muted); margin-bottom: 24px; }
+    .lang { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+    .lang a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 40px;
+      padding: 0 14px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      text-decoration: none;
+      background: white;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="panel">
+      <h1>Remote Stopwatch Privacy Policy</h1>
+      <p class="meta">Effective date: June 30, 2026</p>
+
+      <p>
+        Remote Stopwatch is a non-official stopwatch app for training, practice, events, and casual use.
+        It is designed to work without a user account. We do not intentionally collect your name, email address,
+        location, contacts, photos, audio, files on your device, or camera video.
+      </p>
+
+      <p>
+        If future features add video-based finish verification or any other new processing, we will update this policy
+        before the feature is released.
+      </p>
+
+      <h2>Information used by the app</h2>
+      <p>To provide room-based stopwatch features, the app may transmit operational data such as:</p>
+      <ul>
+        <li>Room ID and join information</li>
+        <li>Client-generated identifiers</li>
+        <li>joinSecret and temporary session-token-like connection data</li>
+        <li>Device role, such as host, starter, stopper, or viewer</li>
+        <li>Optional device name or lane label and runner name</li>
+        <li>START and STOP events</li>
+        <li>Press timestamps for START and STOP</li>
+        <li>elapsedMillis and other measurement results</li>
+        <li>Ranking, history, RTT, offset, estimated error, and WebSocket connection status</li>
+        <li>Communication status, diagnostic logs, and test-log fields such as appPhase</li>
+        <li>Ad-related identifiers if AdMob is enabled</li>
+        <li>Purchase state if Google Play Billing is enabled</li>
+      </ul>
+      <p>
+        Optional labels such as device name, lane label, and runner name can be entered with general-purpose terms
+        like "Lane 1", "Device A", or "Finish judge". If you enter a personal name, that name may be visible to
+        other devices in the same room or in shared result text.
+      </p>
+
+      <h2>Purpose of use</h2>
+      <ul>
+        <li>Create and join measurement rooms</li>
+        <li>Synchronize START and STOP events</li>
+        <li>Calculate corrected times</li>
+        <li>Show results and history</li>
+        <li>Prepare copy/share text for results</li>
+        <li>Show connection quality, error estimates, and diagnostics</li>
+        <li>Manage feature availability if Free/Pro limits or ad stock controls are added later</li>
+      </ul>
+
+      <h2>Storage and retention</h2>
+      <p>
+        Room information and connection data are handled temporarily, only as needed to maintain the current room
+        and display results. In-app history may be stored on the device. If you send logs such as Copy test log,
+        we may use them for support or troubleshooting.
+      </p>
+
+      <h2>Third-party services, ads, and billing</h2>
+      <p>
+        Some builds may use Cloudflare or other infrastructure services for server communication. If ads are enabled,
+        we may use Google AdMob and Google may process ad identifiers or related signals. If billing is enabled, we
+        may use Google Play Billing and Google may process purchase state. We do not directly receive payment card
+        details.
+      </p>
+
+      <h2>Children's privacy</h2>
+      <p>
+        The app is not intended primarily for children under 13. If a minor uses it, we expect a parent or guardian
+        to decide whether that use is appropriate.
+      </p>
+
+      <h2>Security</h2>
+      <p>
+        We intend to use secure communication methods such as HTTPS and WSS for production services. Development-only
+        local connections are not meant for public release. Secret keys, tokens, and signing material are not stored
+        in this repository.
+      </p>
+
+      <h2>Changes to this policy</h2>
+      <p>
+        We may update this policy from time to time. The latest version will be published on this page.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        If you have questions about this policy, please contact <strong>nishigon.app.support@gmail.com</strong>.
+      </p>
+
+      <div class="lang">
+        <a href="../">Language menu</a>
+        <a href="../ko/">한국어</a>
+        <a href="../zh-cn/">简体中文</a>
+        <a href="../zh-tw/">繁體中文</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

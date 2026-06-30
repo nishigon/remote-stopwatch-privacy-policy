@@ -1,0 +1,54 @@
+作業日時: 2026-06-30 17:13
+作業対象リポジトリ: nishigon/remote-stopwatch-privacy-policy
+参照したリポジトリ: nishigon/speak-solve-alarm-privacy-policy
+
+作成/更新したファイル一覧:
+- index.html
+- 404.html
+- README.md
+- README_DEPLOY.txt
+- en/index.html
+- ko/index.html
+- zh-cn/index.html
+- zh-tw/index.html
+
+公開想定URL:
+- https://nishigon.github.io/remote-stopwatch-privacy-policy/
+- https://nishigon.github.io/remote-stopwatch-privacy-policy/en/
+- https://nishigon.github.io/remote-stopwatch-privacy-policy/ko/
+- https://nishigon.github.io/remote-stopwatch-privacy-policy/zh-cn/
+- https://nishigon.github.io/remote-stopwatch-privacy-policy/zh-tw/
+
+検証結果:
+- 参照元と同じ構成の静的ページ群を用意した。
+- Remote Stopwatch専用の文面に更新した。
+- 404ページを用意し、トップおよび言語ページへ戻れるようにした。
+- README と README_DEPLOY.txt に公開URLと公開手順を記載した。
+- 外部依存やビルド手順は追加していない。
+- 秘密情報、トークン、署名キー、local.properties は含めていない。
+- 問い合わせ先は `nishigon.app.support@gmail.com` に置換した。
+- Privacy Policy本文内に `Speak Solve Alarm` / `speak-solve-alarm` は残っていない。
+- `index.html`、`404.html`、`README.md`、`README_DEPLOY.txt`、`en/index.html`、`ko/index.html`、`zh-cn/index.html`、`zh-tw/index.html` は静的HTML/テキストとして整合している。
+
+参照元固有文言の残存チェック結果:
+- 旧アプリ固有文言は残していない。
+- `Speak Solve Alarm` 系の文言は残していない。
+- 問い合わせ先は実メールアドレスに確定済み。
+
+問い合わせ先が確定しているか:
+- 確定済み。
+- `nishigon.app.support@gmail.com`
+
+TODO:
+- なし。
+
+GitHub Pages設定でユーザーが行う必要がある操作:
+- GitHub 上で `nishigon/remote-stopwatch-privacy-policy` を作成する。
+- Settings > Pages で `Deploy from a branch` / `main` / `/root` を設定する。
+- 公開後に URL を確認する。
+- 既にリポジトリがある場合は、更新後に `main` へ反映する。
+
+注意点:
+- この作業では `nishigon.github.io` リポジトリは編集していない。
+- `speak-solve-alarm-privacy-policy` は編集していない。
+- 現在の作業はローカルファイル配置であり、GitHub への反映は別途必要。

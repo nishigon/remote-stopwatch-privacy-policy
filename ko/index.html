@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Remote Stopwatch 개인정보처리방침</title>
+  <style>
+    :root {
+      --bg: #f6f3ec;
+      --panel: #fffaf3;
+      --text: #1f2a33;
+      --muted: #5c6b74;
+      --accent: #2457d6;
+      --border: rgba(31, 42, 51, 0.12);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.75;
+    }
+    main {
+      width: min(860px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 40px 0 56px;
+    }
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 32px;
+      box-shadow: 0 18px 50px rgba(31, 42, 51, 0.10);
+    }
+    h1, h2 { line-height: 1.2; }
+    h1 { margin: 0 0 10px; font-size: clamp(2rem, 4vw, 3rem); }
+    h2 { margin: 28px 0 10px; font-size: 1.15rem; }
+    p, li { color: var(--text); }
+    p { margin: 0 0 14px; }
+    ul { margin: 0 0 14px 22px; padding: 0; }
+    a { color: var(--accent); }
+    .meta { color: var(--muted); margin-bottom: 24px; }
+    .lang { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+    .lang a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 40px;
+      padding: 0 14px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      text-decoration: none;
+      background: white;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="panel">
+      <h1>Remote Stopwatch 개인정보처리방침</h1>
+      <p class="meta">시행일: 2026년 6월 30일</p>
+
+      <p>
+        Remote Stopwatch는 훈련, 연습, 이벤트, 놀이용의 비공식 스톱워치 앱입니다. 계정 생성 없이 사용할 수
+        있도록 설계되었으며, 이름, 이메일 주소, 위치 정보, 연락처, 사진, 음성, 기기 내 파일, 카메라 영상 또는
+        동영상을 의도적으로 수집하지 않습니다.
+      </p>
+
+      <p>
+        향후 종료 지점 확인용 영상 보정 등 새로운 기능이 추가되는 경우, 해당 기능 공개 전에 이 정책을 업데이트합니다.
+      </p>
+
+      <h2>앱이 사용하는 정보</h2>
+      <p>룸 기반 스톱워치 기능을 제공하기 위해 다음과 같은 운영 정보가 전송될 수 있습니다.</p>
+      <ul>
+        <li>Room ID 및 참가 정보</li>
+        <li>기기에서 생성된 식별자</li>
+        <li>joinSecret 및 임시 세션 토큰과 유사한 연결 정보</li>
+        <li>host, starter, stopper, viewer와 같은 역할 정보</li>
+        <li>선택 입력인 기기 이름/레인 이름 및 주자 이름</li>
+        <li>START 및 STOP 이벤트</li>
+        <li>START/STOP 버튼 누른 시각</li>
+        <li>elapsedMillis 등의 측정 결과</li>
+        <li>순위, 이력, RTT, offset, 추정 오차, WebSocket 연결 상태</li>
+        <li>통신 상태, 진단 로그, appPhase 같은 테스트 로그 정보</li>
+        <li>AdMob 사용 시 광고 관련 식별자</li>
+        <li>Google Play Billing 사용 시 구매 상태</li>
+      </ul>
+      <p>
+        기기 이름/레인 이름/주자 이름은 "1레인", "A기기", "골인 담당"처럼 일반적인 표현으로 입력할 수 있습니다.
+        개인 이름을 입력한 경우, 그 내용이 같은 룸의 다른 기기나 결과 공유 문구에 표시될 수 있습니다.
+      </p>
+
+      <h2>이용 목적</h2>
+      <ul>
+        <li>측정 룸 생성 및 참여</li>
+        <li>START/STOP 이벤트 동기화</li>
+        <li>보정된 기록 계산</li>
+        <li>결과 및 이력 표시</li>
+        <li>결과 복사/공유 문구 작성</li>
+        <li>통신 상태와 추정 오차 표시</li>
+        <li>향후 Free/Pro 제한이나 광고 재고 관리가 도입될 경우의 판정</li>
+      </ul>
+
+      <h2>저장 및 보관</h2>
+      <p>
+        룸 정보와 연결 정보는 원칙적으로 현재 룸 유지와 결과 표시에 필요한 범위에서만 임시로 처리합니다.
+        앱 내 이력은 기기 내에 저장될 수 있습니다. Copy test log 같은 로그를 전송한 경우 지원 또는 문제 조사에 활용할 수 있습니다.
+      </p>
+
+      <h2>제3자 서비스, 광고 및 결제</h2>
+      <p>
+        일부 빌드에서는 서버 통신을 위해 Cloudflare 등 인프라 서비스를 사용할 수 있습니다. 광고가 활성화되면
+        Google AdMob을 사용할 수 있으며, 이 경우 Google이 광고 식별자나 관련 신호를 처리할 수 있습니다. 결제가
+        활성화되면 Google Play Billing을 사용할 수 있으며, Google이 구매 상태를 처리할 수 있습니다. 결제 카드 정보는 앱 개발자가 직접 받지 않습니다.
+      </p>
+
+      <h2>아동의 개인정보</h2>
+      <p>
+        본 앱은 주로 만 13세 미만 아동을 대상으로 하지 않습니다. 미성년자가 사용하는 경우에는 보호자 또는 관리자가 그 사용이 적절한지 판단하는 것을 전제로 합니다.
+      </p>
+
+      <h2>보안</h2>
+      <p>
+        운영 서비스에서는 HTTPS 및 WSS 같은 안전한 통신 방식을 사용할 예정입니다. 개발용 로컬 연결은 공개 배포용이 아닙니다.
+        비밀 키, 토큰, 서명 자료는 이 저장소에 포함하지 않습니다.
+      </p>
+
+      <h2>정책 변경</h2>
+      <p>
+        본 방침은 필요에 따라 변경될 수 있으며, 최신 버전은 이 페이지에 게시됩니다.
+      </p>
+
+      <h2>문의</h2>
+      <p>
+        이 방침에 대한 문의는 <strong>nishigon.app.support@gmail.com</strong>로 보내 주세요.
+      </p>
+
+      <div class="lang">
+        <a href="../">언어 메뉴</a>
+        <a href="../en/">English</a>
+        <a href="../zh-cn/">简体中文</a>
+        <a href="../zh-tw/">繁體中文</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
