@@ -87,8 +87,8 @@
         <li>elapsedMillis 等測量結果、名次、歷史記錄</li>
         <li>RTT、offset、推定誤差、WebSocket 連線狀態</li>
         <li>通訊狀態、診斷日誌、appPhase 等測試日誌資訊</li>
-        <li>啟用 AdMob 時廣告 SDK 處理的廣告 ID 等</li>
-        <li>啟用 Google Play Billing 時處理的購買狀態</li>
+        <li>顯示 AdMob 廣告時廣告 SDK 處理的廣告 ID 等</li>
+        <li>透過 Google Play Billing 處理的購買狀態、訂閱狀態、購買復原結果、Billing 錯誤狀態</li>
       </ul>
       <p>
         裝置名稱／分道名稱、跑者名稱是使用者可選輸入的標籤，可使用「1號分道」「A裝置」「終點負責」等一般標籤。
@@ -105,7 +105,7 @@
         <li>顯示結果、歷史記錄以及建立複製／分享文字</li>
         <li>顯示通訊狀態與推定誤差</li>
         <li>故障調查與詢問回應</li>
-        <li>未來導入 Free／Pro 或廣告庫存控制時，用於功能限制判定</li>
+        <li>用於判定 Free／Team 擴充限制、廣告顯示、測量庫存以及 STOP／Viewer 裝置數量上限</li>
       </ul>
     </section>
 
@@ -126,12 +126,19 @@
         不會販售個人資訊。伺服器通訊可能使用 Cloudflare 等基礎設施服務。
       </p>
       <p>
-        若啟用廣告，可能使用 Google AdMob，Google 可能處理廣告 ID 等資訊。初期測試中，廣告可能採用 Mock 或保持停用。
-        Free 版可能顯示橫幅廣告或獎勵型廣告，Pro 版原則上不顯示廣告。
+        Free 版與 Team 擴充都會透過 Google AdMob 顯示橫幅廣告與獎勵型廣告。Google 可能處理廣告 ID 等資訊。
+        Team 擴充不是無廣告方案。
       </p>
       <p>
-        若啟用付費，可能使用 Google Play Billing，Google 可能處理購買狀態。未來的 Pro 功能可能包含去廣告、無限制計時、
-        多個 STOP 支援以及更強的歷史保存。開發者不會直接取得付款卡資訊。
+        Team 擴充訂閱的購買、購買狀態確認、購買復原以及訂閱管理使用 Google Play Billing。Google 可能處理購買狀態、訂閱狀態、購買復原結果、
+        Billing 錯誤狀態等。開發者不會直接取得付款卡資訊。
+      </p>
+      <p>
+        Team 擴充狀態僅用於擴大 START 裝置建立或更新的 Room 的連線人數。Team 擴充可連接最多 10 台 STOP 裝置、最多 10 台 Viewer 裝置，Room 總數最多 21 台。
+        測量庫存與 Free 相同：初始 5 次、每觀看 1 次獎勵型廣告 +3 次、上限 30 次。STOP 裝置或參加者不需要購買 Team 擴充。START 裝置的 Team 擴充狀態會套用到整個 Room。
+      </p>
+      <p>
+        purchaseToken、簽署金鑰、服務帳戶金鑰等敏感值，不會被有意包含在 Copy test log、結果複製文字、CODEX_RESULT、公開儲存庫或 ZIP 成果物中。
       </p>
     </section>
 
@@ -163,7 +170,7 @@
       </p>
     </section>
 
-    <p class="meta">最後更新日期: 2026-06-30</p>
+    <p class="meta">最後更新日期: 2026-07-03</p>
   </main>
 </body>
 </html>

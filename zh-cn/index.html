@@ -87,8 +87,8 @@
         <li>elapsedMillis 等测量结果、排名、历史记录</li>
         <li>RTT、offset、估计误差、WebSocket 连接状态</li>
         <li>通信状态、诊断日志、appPhase 等测试日志信息</li>
-        <li>启用 AdMob 时广告 SDK 处理的广告 ID 等</li>
-        <li>启用 Google Play Billing 时处理的购买状态</li>
+        <li>显示 AdMob 广告时广告 SDK 处理的广告 ID 等</li>
+        <li>通过 Google Play Billing 处理的购买状态、订阅状态、购买恢复结果、Billing 错误状态</li>
       </ul>
       <p>
         设备名／赛道名、跑者名是用户可选输入的标签，可以使用“1号赛道”“A设备”“终点负责”等通用标签。
@@ -105,7 +105,7 @@
         <li>显示结果、历史记录以及生成复制／分享文本</li>
         <li>显示通信状态和估计误差</li>
         <li>故障调查和咨询应对</li>
-        <li>将来引入 Free／Pro 或广告库存控制时用于功能限制判定</li>
+        <li>用于判断 Free／Team 扩展限制、广告显示、测量库存以及 STOP／Viewer 设备数量上限</li>
       </ul>
     </section>
 
@@ -126,12 +126,19 @@
         不会出售个人信息。服务器通信可能使用 Cloudflare 等基础设施服务。
       </p>
       <p>
-        如果启用广告，可能使用 Google AdMob，Google 可能会处理广告 ID 等信息。初期测试中，广告可能使用 Mock 或保持禁用。
-        Free 版可能显示横幅广告或激励广告，Pro 版原则上不显示广告。
+        Free 版和 Team 扩展都会通过 Google AdMob 显示横幅广告和激励广告。Google 可能会处理广告 ID 等信息。
+        Team 扩展不是无广告方案。
       </p>
       <p>
-        如果启用付费，可能使用 Google Play Billing，Google 可能会处理购买状态。未来的 Pro 功能可能包括去广告、无限计时、
-        多个 STOP 支持以及更强的历史记录保存。开发者不会直接获取支付卡信息。
+        Team 扩展订阅的购买、购买状态确认、购买恢复以及订阅管理使用 Google Play Billing。Google 可能会处理购买状态、订阅状态、购买恢复结果、
+        Billing 错误状态等。开发者不会直接获取支付卡信息。
+      </p>
+      <p>
+        Team 扩展状态仅用于扩大由 START 设备创建或更新的 Room 的连接人数。Team 扩展可连接最多 10 台 STOP 设备、最多 10 台 Viewer 设备，Room 总数最多 21 台。
+        测量库存与 Free 相同：初始 5 次、每观看 1 次激励广告 +3 次、上限 30 次。STOP 设备或参加者无需购买 Team 扩展。START 设备的 Team 扩展状态会应用到整个 Room。
+      </p>
+      <p>
+        purchaseToken、签名密钥、服务账号密钥等敏感值不会被有意包含在 Copy test log、结果复制文本、CODEX_RESULT、公开仓库或 ZIP 成果物中。
       </p>
     </section>
 
@@ -163,7 +170,7 @@
       </p>
     </section>
 
-    <p class="meta">最后更新日期: 2026-06-30</p>
+    <p class="meta">最后更新日期: 2026-07-03</p>
   </main>
 </body>
 </html>

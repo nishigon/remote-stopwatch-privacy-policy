@@ -111,8 +111,8 @@
         <li>Measurement results such as elapsedMillis, ranking, and history</li>
         <li>RTT, offset, estimated error, and WebSocket connection status</li>
         <li>Communication status, diagnostic logs, and test-log fields such as appPhase</li>
-        <li>Advertising identifiers or related data handled by ad SDKs when AdMob is enabled</li>
-        <li>Purchase state handled when Google Play Billing is enabled</li>
+        <li>Advertising identifiers or related data handled by ad SDKs when AdMob ads are shown</li>
+        <li>Purchase state, subscription state, purchase restoration result, and Billing error state handled through Google Play Billing</li>
       </ul>
       <p>
         Device name, lane label, and runner name are optional labels. They can be general labels such as "Lane 1", "Device A", or "Finish judge".
@@ -129,7 +129,7 @@
         <li>Display results and history, and create copy/share text</li>
         <li>Display connection status and estimated error</li>
         <li>Investigate issues and respond to inquiries</li>
-        <li>Determine feature restrictions if Free/Pro control or ad stock management is added in the future</li>
+        <li>Determine Free/Team extension restrictions, ad display, measurement stock, and STOP/Viewer device limits</li>
       </ul>
     </section>
 
@@ -150,12 +150,20 @@
         Personal information is not sold. Infrastructure services such as Cloudflare may be used for server communication.
       </p>
       <p>
-        If ads are enabled, Google AdMob may be used, and Google may handle ad identifiers or related data. Ads may be mocked or disabled during initial testing.
-        The Free version may show banner ads or rewarded ads, while the Pro version is intended to be ad-free.
+        The Free version and Team extension show banner ads and rewarded ads through Google AdMob. Google may handle advertising identifiers or related data.
+        Team extension still shows ads.
       </p>
       <p>
-        If billing is enabled, Google Play Billing may be used, and Google may handle purchase status. Pro features may in the future include ad-free use,
-        unlimited measurement, multiple STOP support, and stronger history storage. Payment card information is not directly obtained by the developer.
+        Google Play Billing is used for Team extension subscription purchase, purchase-state checks, purchase restoration, and subscription management.
+        Google may handle purchase state, subscription state, purchase restoration results, and Billing error state. Payment card information is not directly obtained by the developer.
+      </p>
+      <p>
+        Team extension status is used only to expand the connection capacity of Rooms created or updated by the START device. Team extension allows up to 10 STOP devices, up to 10 Viewer devices, and up to 21 total Room clients.
+        Measurement stock is the same as Free: 5 initial measurements, +3 per rewarded ad, and a stock cap of 30. STOP devices and participants do not need Team extension. The START device's Team extension status is applied to the Room.
+      </p>
+      <p>
+        Secret values such as purchaseToken, signing keys, and service-account keys are not intentionally included in Copy test logs, copied result text,
+        CODEX_RESULT files, public repositories, or ZIP artifacts.
       </p>
     </section>
 
@@ -188,7 +196,7 @@
       </p>
     </section>
 
-    <p class="meta">Last updated: 2026-06-30</p>
+    <p class="meta">Last updated: 2026-07-03</p>
   </main>
 </body>
 </html>
