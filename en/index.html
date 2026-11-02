@@ -74,129 +74,42 @@
     </p>
 
     <section>
-      <h2>1. Scope</h2>
-      <p>
-        This policy applies to information handled in connection with Remote Stopwatch. Remote Stopwatch is a non-official measurement app
-        that uses two or more smartphones to measure time between separated points such as a start point and a goal point.
-        Devices assigned as START and STOP participants join the same measurement room, and the app corrects press timestamps and displays the result.
-        It is intended for training, practice, events, and casual use rather than official competition timing.
-      </p>
+      <p>Remote Stopwatch (the “App”) connects multiple devices to the same timing room and displays elapsed time from START and STOP/GOAL actions. This policy explains how information is handled by the Android and iOS apps and the server used by the App. The App is not intended for official competition timing.</p>
     </section>
-
     <section>
-      <h2>2. Information not intentionally collected</h2>
-      <p>The initial version is not intended to collect the following information:</p>
-      <ul>
-        <li>Name</li>
-        <li>Email address</li>
-        <li>Location information</li>
-        <li>Contacts</li>
-        <li>Photos</li>
-        <li>Audio</li>
-        <li>Files stored on the device</li>
-        <li>Camera footage or video</li>
-      </ul>
-      <p>
-        If future features add goal-confirmation video correction or similar processing, this policy will be updated before release.
-      </p>
+      <h2>1. Information handled</h2>
+      <p>To operate timing rooms, the App handles a room ID, a client ID for each device, temporary connection and authentication information needed to join, device roles and connection status, START and STOP/GOAL action times, communication timing and correction values used for synchronization, and timing results. If you enter optional device, lane, or runner labels, the App handles those labels too. A personal name you enter may appear on other devices in the same room or in text you choose to share. Network connections also provide the server operator with information needed for communication, such as an IP address.</p>
+      <p>Timing history is stored on the device and can be viewed and deleted in the App. Older local history may be cleared when the Free history limit applies. If you choose to copy or share a result, the text goes to the destination you select. The App does not automatically send your complete history to an external sharing destination.</p>
+      <p>On iOS, the camera is used to read room invitation QR codes. The App has no feature that sends camera footage or photos to the timing server. Room join information contained in a QR code is used to join a room. The App also has no feature that automatically sends contacts, microphone audio, or device photos or files to the timing server. The App itself does not request precise GPS location. Advertising services may, however, handle approximate location inferred from an IP address.</p>
     </section>
-
     <section>
-      <h2>3. Information that may be handled</h2>
-      <ul>
-        <li>Room ID, Client ID, joinSecret, and temporary connection data similar to a session token</li>
-        <li>Device role information such as host, starter, stopper, and viewer</li>
-        <li>Optional labels such as device name, lane label, and runner name</li>
-        <li>START events, STOP events, and START/STOP press timestamps</li>
-        <li>Measurement results such as elapsedMillis, ranking, and history</li>
-        <li>RTT, offset, estimated error, and WebSocket connection status</li>
-        <li>Communication status, diagnostic logs, and test-log fields such as appPhase</li>
-        <li>Advertising identifiers or related data handled by ad SDKs when AdMob ads are shown</li>
-        <li>Purchase state, subscription state, purchase restoration result, and Billing error state handled through Google Play Billing</li>
-      </ul>
-      <p>
-        Device name, lane label, and runner name are optional labels. They can be general labels such as "Lane 1", "Device A", or "Finish judge".
-        If a personal name is entered, it may be shown to other devices in the same room or in copied/shared result text.
-      </p>
+      <h2>2. Purchases, ads, and consent</h2>
+      <p>TEAM extension purchases and management use Google Play Billing on Android and Apple StoreKit on iOS. To check purchase status and expiry and verify TEAM access for a room, the Android app sends purchase proof and the iOS app sends a signed, verified transaction to the App's server. The developer does not directly obtain payment card numbers through the App. Purchases, cancellations, and refunds are handled through the relevant store.</p>
+      <p>Free screens eligible for ads may show Google AdMob banner or rewarded ads. In the current Android and iOS apps, ad requests from a purchasing device are suppressed while its own active TEAM entitlement is verified. Ads on another device in the same room depend on that device's own entitlement and ad settings.</p>
+      <p>The App uses the Google Mobile Ads SDK and User Messaging Platform SDK for ads and consent management. Depending on configuration, region, consent, device restrictions, and ad use, these SDKs may handle IP address, approximate location, device and advertising identifiers, ad and app interaction data, and crash or performance diagnostics. Google's notices and the consent screen presented in the App describe the applicable collection and use. You can change advertising choices through a consent screen when available and through device privacy settings. If required ad consent is unavailable, the types of ads available may change or ads may not be shown.</p>
     </section>
-
     <section>
-      <h2>4. Purpose of use</h2>
-      <ul>
-        <li>Create, join, and maintain measurement rooms</li>
-        <li>Synchronize START and STOP events</li>
-        <li>Calculate corrected times</li>
-        <li>Display results and history, and create copy/share text</li>
-        <li>Display connection status and estimated error</li>
-        <li>Investigate issues and respond to inquiries</li>
-        <li>Determine Free/Team extension restrictions, ad display, measurement stock, and STOP/Viewer device limits</li>
-      </ul>
+      <h2>3. Purposes and recipients</h2>
+      <p>Information is used to create, join, and maintain rooms; synchronize device times; display results and history; verify TEAM access and usage limits; display ads and manage consent; investigate connection problems and defects; and respond to inquiries. The App uses Cloudflare server infrastructure for timing communications, Google for ads and consent management, Google Play for Android purchases, and Apple for iOS purchases. When you use a sharing feature, the text also goes to the destination you select. The developer does not sell user information.</p>
     </section>
-
     <section>
-      <h2>5. Retention period</h2>
-      <p>
-        Room information and connection information are generally handled temporarily only to the extent needed to maintain the measurement room and display results.
-        In-app history may be stored on the device. If the user sends logs such as Copy test log, they may be used for support and troubleshooting.
-      </p>
-      <p>
-        If long-term cloud history storage is introduced in the future, this policy will be updated.
-      </p>
+      <h2>4. Storage and deletion</h2>
+      <p>Local timing history may remain on the device until you delete it in the App or the App's data is removed. Clearing associated with Free storage limits is described in the App. The server may store information needed to operate rooms, verify entitlements, and investigate problems. Expiration or closure of a room does not mean that stored data and operational logs are deleted at the same time. Please contact us below with questions about storage or deletion.</p>
     </section>
-
     <section>
-      <h2>6. Third-party services, ads, and billing</h2>
-      <p>
-        Personal information is not sold. Infrastructure services such as Cloudflare may be used for server communication.
-      </p>
-      <p>
-        The Free version and Team extension show banner ads and rewarded ads through Google AdMob. Google may handle advertising identifiers or related data.
-        Team extension still shows ads.
-      </p>
-      <p>
-        Google Play Billing is used for Team extension subscription purchase, purchase-state checks, purchase restoration, and subscription management.
-        Google may handle purchase state, subscription state, purchase restoration results, and Billing error state. Payment card information is not directly obtained by the developer.
-      </p>
-      <p>
-        Team extension status is used only to expand the connection capacity of Rooms created or updated by the START device. Team extension allows up to 10 STOP devices, up to 10 Viewer devices, and up to 21 total Room clients.
-        Measurement stock is the same as Free: 5 initial measurements, +3 per rewarded ad, and a stock cap of 30. STOP devices and participants do not need Team extension. The START device's Team extension status is applied to the Room.
-      </p>
-      <p>
-        Secret values such as purchaseToken, signing keys, and service-account keys are not intentionally included in Copy test logs, copied result text,
-        CODEX_RESULT files, public repositories, or ZIP artifacts.
-      </p>
+      <h2>5. Your choices and security</h2>
+      <p>You can use generic labels instead of entering runner or device names. You can delete local history, use advertising consent choices when shown, use OS privacy settings, and manage subscriptions in the relevant store. If you do not allow camera access, you can use the available room-code entry method instead of scanning a QR code. Public versions of the App use HTTPS/WSS for timing communications. The App is designed not to include connection secrets or purchase proof in public text or shareable diagnostic logs.</p>
     </section>
-
     <section>
-      <h2>7. Use by children</h2>
-      <p>
-        This app is not primarily intended for children under 13. If a minor uses the app, use should be decided by a parent or responsible guardian.
-      </p>
+      <h2>6. Children</h2>
+      <p>The App is not primarily intended for children under 13. A parent or responsible adult should decide whether a minor uses it.</p>
     </section>
-
     <section>
-      <h2>8. Security</h2>
-      <p>
-        Public releases are intended to use secure communication methods such as HTTPS and WSS. Development-only local connections such as debugLocal are not intended for public release.
-        Signing keys, secrets, and tokens are not included in the public repository.
-      </p>
+      <h2>7. Changes and contact</h2>
+      <p>Changes to this policy will be posted on this page. For questions about data handling or deletion, contact <a href="mailto:nishigon.app.support@gmail.com">nishigon.app.support@gmail.com</a>.</p>
     </section>
 
-    <section>
-      <h2>9. Revisions</h2>
-      <p>
-        This policy may be revised as needed. The latest version will be published on this page.
-      </p>
-    </section>
-
-    <section>
-      <h2>10. Contact</h2>
-      <p>
-        Contact for this policy: <a href="mailto:nishigon.app.support@gmail.com">nishigon.app.support@gmail.com</a>
-      </p>
-    </section>
-
-    <p class="meta">Last updated: 2026-07-03</p>
+    <p class="meta">Last updated: 2026-11-02</p>
   </main>
 </body>
 </html>
